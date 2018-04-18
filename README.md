@@ -19,12 +19,13 @@ Just run
 And then wait for all variants stored in output folder
 
 ### Flags
-`--input-folder` - specify input folder with given structure
-`--output-folder` - specify output folder for generated pictures
+`-i` - specify input folder with given structure
 
-### Folder structure
+`-o` - specify output folder for generated pictures
 
-You need folder structure for `input folder`:
+#### Folder structure
+
+You need exactly that kind of structure for input folder:
 ```
 ./input-folder/
   ../layer001/

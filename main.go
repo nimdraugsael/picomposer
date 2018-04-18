@@ -13,8 +13,8 @@ import (
 )
 
 var (
-	inputFolder    = flag.String("input-folder", "./pngs", "folder with all images for composition")
-	outputFolder    = flag.String("output-folder", "./output", "output folder")
+	inputFolder    = flag.String("i", "./pngs", "folder with all images for composition")
+	outputFolder    = flag.String("o", "./output", "output folder")
 )
 
 
@@ -60,7 +60,7 @@ func (p *Picomposer) loadImages() {
 				img, err := gg.LoadPNG(path)
 
 				if err != nil {
-					log.Fatal(err)
+					log.Fatal("Error opening png", path, err)
 				}
 				name := strings.Split(f.Name(), ".")[0]
 				imgs = append(imgs, namedImage{img, name})
