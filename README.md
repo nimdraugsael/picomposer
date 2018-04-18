@@ -7,6 +7,8 @@ Generate all variants from png layers.
 Sometimes you need to generate a lot of different pictures from few parts.
 Picomposer combines layers of transparent png images into all possible variations
 
+![alt text](https://user-images.githubusercontent.com/1700932/38917162-1054067c-4314-11e8-8176-ffeee3ce6621.png)
+
 ### How to
 
 Just run 
